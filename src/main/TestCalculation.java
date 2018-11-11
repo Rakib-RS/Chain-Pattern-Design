@@ -13,6 +13,9 @@ public class TestCalculation {
 		chainCalc3.setNextChain(chainCalc4);
 		Numbers request = new Numbers(4,2,"add");
 		chainCalc1.calculate(request);
+		Numbers request1 = new Numbers(4,2,"sub");
+		chainCalc1.calculate(request1);
+
 
 	}
 

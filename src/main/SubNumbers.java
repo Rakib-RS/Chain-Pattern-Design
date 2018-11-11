@@ -14,13 +14,13 @@ public class SubNumbers implements Chain {
 	public double calculate(Numbers requests) {
 		// TODO Auto-generated method stub
 		if(requests.getCalculationWanted() == "sub") {
-			return (requests.getNumber1()-requests.getNumber2());		}
+			return (requests.getNumber1()-requests.getNumber2());
+
+		}
 		else {
-			nextInChain.calculate(requests);			
+			return nextInChain.calculate(requests);			
 			
 		}
-		return -1;
-
 
 	}
 

@@ -24,6 +24,11 @@ class TestCalculation {
 		chainCalc3.setNextChain(chainCalc4);
 		//Numbers request = new Numbers(4,2,"add");
 		assertEquals(6.0,chainCalc1.calculate(new Numbers(4,2,"add")),"");
+		assertEquals(2.0,chainCalc1.calculate(new Numbers(4,2,"sub")),"");
+		assertEquals(8.0,chainCalc1.calculate(new Numbers(4,2,"mult")),"");
+		assertEquals(2.0,chainCalc1.calculate(new Numbers(4,2,"divide")),"");
+
+
 	}
 
 }

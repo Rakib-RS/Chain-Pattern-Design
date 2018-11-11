@@ -14,11 +14,11 @@ public class MultiplyNumbers implements Chain {
 	public double calculate(Numbers requests) {
 		// TODO Auto-generated method stub
 		if(requests.getCalculationWanted() == "mult") {
-			return (requests.getNumber1()*requests.getNumber2());		}
-		else {
-			nextInChain.calculate(requests);
+			return (requests.getNumber1()*requests.getNumber2());		
 		}
-		return -1;
+		else {
+			return nextInChain.calculate(requests);
+		}
 
 
 	}
